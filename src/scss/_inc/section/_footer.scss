@@ -1,0 +1,217 @@
+footer{
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    z-index: 900;
+    width: 100%;
+    height: 180px;
+    .container{
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .mail-wrapper{
+            display: flex;
+            .mail{
+                padding-left: 15px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+            }
+            .name{
+                font-size: 12px;
+                color: $grey;
+                font-weight: 600;
+            }
+            .link{
+                font-size: 16px;
+                font-weight: 700;
+                color: $orange;
+            }
+        }
+        .img-wrapper{
+            img{
+                width: 24px;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+        .img-wrapper{
+            width: 50px;
+            height: 50px;
+            background: $white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .copiryght{
+            padding-top: 20px;
+            font-size: 13px;
+            color: $grey;
+            line-height: 2;
+        }
+    }
+    .pages{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .number{
+            font-size: 48px;
+            line-height: 1;
+            letter-spacing: 0.48px;
+            color: $orange;
+            border-bottom: 2px solid $blue;
+        }
+        img{
+            width: 18px;
+            height: 24px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .name{
+            font-size: 15px;
+            color: $ligh-grey-color;
+            text-align: center;
+            line-height: 1.8;
+        }
+    }
+    .popup{
+        position: fixed;
+        z-index: 850;
+        display: none;
+        //display: block;
+        width: 100%;
+        height: 100vh;
+        background: $bg-color;
+        top: 0px;
+        left: 0px;
+        align-items: center;
+        justify-content: center;
+        .container{
+            height: auto;
+            width: auto;
+        }
+        &.show{
+            display: flex;
+        }
+        .title{
+            margin-bottom: 50px;
+            font-size: 36px;
+            color: $blue;
+            font-weight: 700;
+            line-height: 1;
+        }
+        .contacts{
+            padding: 0 80px;
+        }
+        .form-wrapper{
+            padding: 0 80px;
+            div.wpforms-container .wpforms-form{
+                .wpforms-field{
+                    padding: 0px;
+                }
+                input{
+                    color: $black;
+                    font-size: 15px;
+                    padding: 0px;
+                    padding-bottom: 15px;
+                    margin-bottom: 35px;
+                    background: transparent;
+                    border: none;
+                    border-bottom: $form-border;
+                    &::placeholder{
+                        color: $grey;
+                    }
+                }
+                textarea{
+                    color: $black;
+                    font-size: 15px;
+                    padding: 0px;
+                    padding-bottom: 15px;
+                    margin-bottom: 35px;
+                    background: transparent;
+                    border: none;
+                    min-height: 100px;
+                    border-bottom: $form-border;
+                    resize: none;
+                    height: auto;
+                    &::placeholder{
+                        color: $grey;
+                    }
+                }
+                button{
+                    background: $orange;
+                    border-radius: 22px;
+                    padding: 15px 70px;
+                    color: $white;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+            }
+            div.wpforms-container-full .wpforms-form label.wpforms-error{
+                position: relative;
+                top: -25px;
+                color: red;
+            }
+        }
+        .social-wrapper{
+            display: flex;
+            align-items: center;
+            padding-top: 60px;
+            .social-item{
+                margin-right: 15px;
+                a{
+                    width: 50px;
+                    height: 50px;
+                    background-color: $white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 20px;
+                    transition: $transition;
+                }
+                svg{
+                    width: auto;
+                    height: 17px;
+                    transition: $transition;
+                }
+                path{
+                    fill: $blue;
+                    transition: $transition;
+                }
+                &:hover{
+                    path{
+                        fill: $white;
+                    }   
+                    a{
+                        background: $blue;
+                        box-shadow: 14px 23px 24px rgba($color: $black, $alpha: .11);
+                    }
+                }
+            }
+        }
+        .text{
+            color: $black;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .mail{
+            padding-top: 20px;
+            color: $orange;
+            font-size: 24px;
+            font-weight: 700;
+            display: block;
+            transition: $transition;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+}

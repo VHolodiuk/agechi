@@ -1,0 +1,102 @@
+header{
+    height: 170px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+    .container{
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo-min{
+        display: flex;
+        width: 200px;
+        align-items: center;
+        min-width: max-content;
+        z-index: 900;
+    }
+    .menu-items{
+        display: flex;
+        align-items: center;
+        a{
+            padding: 0 25px;
+            font-size: 15px;
+            line-height: 1.2;
+            font-weight: 600;
+            transition: $transition;
+            &:hover{
+                color: $orange;
+            }
+            &.active{
+                color: $orange;
+            }
+        }
+        &.hidden{
+            visibility: hidden;
+            pointer-events: none;
+            a{
+                transition-duration: 0s;
+            }
+        }
+    }
+    .button-wrapper{
+        display: flex;
+        align-items: center;
+        .language-wrapper{
+            padding-right: 20px;
+            select{
+                font-size: 15px;
+                line-height: 1.2;
+                font-weight: 600;
+                transition: $transition;
+                &:hover{
+                    color: $orange;
+                }
+                &.active{
+                    color: $orange;
+                }
+            }
+        }
+        .button{
+            border-radius: 22px;
+            border: 1px solid $border-grey;
+            padding: 16px 50px;
+            color: $blue;
+            font-size: 16px;
+            font-weight: 600;
+            z-index: 900;
+            transition-duration: 1s;
+            min-width: max-content;
+            &:hover{
+                background: $orange;
+                color: $black;
+            }
+        }
+        .close{
+            display: none;
+            align-items: center;
+            justify-content: center;
+            width: 55px;
+            height: 55px;
+            border-radius: 22px;
+            border: 1px solid $border-grey;
+        }
+        &.show{
+            .language-wrapper{
+                visibility: hidden;
+                pointer-events: none;
+            }
+            .button{
+                display: none;
+            }
+            .close{
+                display: flex;
+            }
+        }
+    }
+}
+

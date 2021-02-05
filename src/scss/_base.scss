@@ -1,0 +1,100 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    @include basikText;
+    &:before,
+    &:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+  }
+
+html.hidden {
+    overflow: hidden;
+}
+
+html,
+body {
+    height: 100%;
+    max-width: 100vw;
+    width: 100%;
+    margin-top: 0px !important;
+}
+.fp-enabled{
+    margin-top: 0px !important;
+}
+body {
+    min-width: 320px;
+    overflow-x: hidden;
+    display: flex;
+    color: $black;
+    width: 100vw;
+    max-width: 100vw;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    &.no-scroll{
+        overflow: hidden;
+    }
+}
+
+select,
+a,
+button{
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    text-decoration: none;
+}
+input {
+    background: none;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6,p,span,i,b,blockquote,a,strong{
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  text-decoration: none;
+  margin: 0px;
+}
+
+main {
+    width: 100%;
+    max-width: 100vw;
+    height: 100vh;
+}
+
+section{
+    display: flex;
+    max-width: 100%;
+    height: 100vh;
+    background: $bg-color;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    z-index: 1;
+}

@@ -1,0 +1,357 @@
+/*==========  Desktop First  ==========*/
+/*
+
+@media only screen and (max-width : 1500px) 
+@media only screen and (max-width : 1200px)
+@media only screen and (max-width : 992px)
+@media only screen and (max-width : 768px) 
+@media only screen and (max-width : 550px)
+
+*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1500px) {
+    .about{
+        .title-wrapper{
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width : 1200px){
+    .about{
+        .container{
+            flex-direction: column;
+        }
+        .provide-wrapper{
+            width: 100%;
+            padding-right: 0px;
+            max-width: unset;
+            .list-wrapper{
+                display: flex;
+                flex-wrap: wrap;
+                .list-item{
+                    padding-right: 20px;
+                    padding-bottom: 20px;
+                }
+            }
+            .title{
+                padding-bottom: 20px;
+            }
+        }
+        .content-wrapper{
+            width: 100%;
+            padding-right: 0px;
+            max-width: unset;
+            .title{
+                font-size: 32px;
+            }
+            .text{
+                padding-bottom: 10px;
+            }
+            .partner-wrapper .text{
+                padding-bottom: 0px;
+                br{
+                    display: none;
+                }
+            }
+        }
+    }
+    .jobs .slider-wrapper .img-wrapper{
+        padding: 0 40px;
+    }
+    .teams .slider-wrapper .img-wrapper{
+        padding: 0 20px;
+    }
+    .job-full{
+        background-position-x: -40vw;
+        background-position-y: -40vw;
+    }
+    footer .popup .contacts, footer .popup .form-wrapper{
+        padding: 0 40px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1100px) {
+    header{
+        height: 100px;
+    }
+    .about .container{
+        padding-top: 100px;
+    }
+    .jobs .container{
+        padding-top: 100px;
+    }
+    .teams .container{
+        padding-top: 100px;
+    } 
+    .job-full{
+        .job-slider-wrapper{
+            padding: 100px 0;
+        }
+        .slick-arrow{
+            bottom: 100px;
+        }
+    }
+    footer{
+        .popup{
+            padding-top: 100px;
+        }
+    }
+
+}
+@media only screen and (max-width : 992px) {
+    .container{
+        padding: 0 40px;
+    }
+    header{
+        height: 100px;
+        .menu-wrapper{
+            display: none;
+        }
+        .logo{
+            width: 150px;
+        }
+        .button-wrapper{
+            .button{
+                padding: 15px 30px;
+            }
+        }
+    }
+    .main-window{
+        // .title-wrapper .circle{
+        //     width: 170px;
+        //     right: -90px;
+        //     top: -70px;
+        // }
+        .title{
+            font-size: 80px;
+        }
+        .text{
+            font-size: 18px;
+            font-weight: normal;
+            text-align: center;
+            line-height: 1.6;
+        }
+    }
+    .about .container{
+        padding-top: 100px;
+    }
+    .jobs .container{
+        padding-top: 100px;
+        .title-wrapper .title{
+            font-size: 24px;
+        }
+        .slick-arrow{
+            top: -25px;
+        }
+    }
+    .teams .container{
+        padding-top: 100px;
+        .title-wrapper .title{
+            font-size: 24px;
+        }
+        .slick-arrow{
+            top: -25px;
+        }
+    }
+    .job-full{
+        background-position-x: -40vw;
+        background-position-y: -40vw;
+        .job-slider-wrapper{
+            padding: 100px 0;
+            .img-wrapper{
+                display: none;
+            }
+            .content-wrapper{
+                width: 100%;
+                min-width: unset;
+                padding-right: 0px;
+            }
+        }
+        .slick-arrow{
+            bottom: 100px;
+        }
+    }
+    footer{
+        .popup{
+            padding-top: 100px;
+            .contacts{
+                margin-bottom: 30px;
+                padding: 0px;
+            }
+            .container{
+                flex-direction: column;
+            }
+            .title{
+                margin-bottom: 20px;
+            }
+            .social-wrapper{
+                padding-top: 20px;
+            }
+            .form-wrapper{
+                padding: 0px;
+                .wpforms-field-container{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .wpforms-field{
+                        width: calc(50% - 20px);
+                        &.wpforms-field-textarea{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* Medium Devices */
+@media only screen and (max-width : 768px) {
+    .container{
+        padding: 0 20px;
+    }
+    .main-window{
+        // .title-wrapper .circle{
+        //     width: 100px;
+        //     right: -50px;
+        //     top: -40px;
+        // }
+        .warm{
+            bottom: 10vw;
+        }
+        .title{
+            font-size: 42px;
+        }
+        .text{
+            font-size: 16px;
+            font-weight: normal;
+            text-align: center;
+            line-height: 1.6;
+        }
+    }
+    footer{
+        height: 110px;
+        .contact .copiryght{
+            padding-top: 10px;
+        }
+        .pages{
+            justify-content: center;
+            .number{
+                font-size: 40px;
+            }
+            img{
+                margin-bottom: 10px;
+            }
+        }
+        .popup{
+            .title{
+                font-size: 24px;
+            }
+            .mail{
+                font-size: 20px;
+                padding-top: 10px;
+            }
+            .social-wrapper{
+                padding-top: 10px;
+                .social-item{
+                    a{
+                        width: 36px;
+                        height: 36px;
+                        svg{
+                            height: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .about{
+        .circle{
+            right: 35vw;
+        }
+        .circle-rect {
+            left: 10vw;
+            width: 30vw;
+        }
+        .content-wrapper{
+            .title{
+                font-size: 24px;
+            }
+            .text{
+                font-size: 14px;
+            }
+        }
+        .provide-wrapper{
+            .title{
+                font-size: 22px;
+            }
+            .list-wrapper{
+                .list-item{
+                    img{
+                        width: 32px;
+                        height: 32px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .job-full{
+        background-position-x: -70vw;
+        background-position-y: -60vw;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 450px) {
+    .main-window{
+        .warm{
+            bottom: 25vw;
+        }
+    }
+    .job-full{
+        background-image: none;
+    }
+    .about{
+        .content-wrapper{
+            .title{
+                font-size: 20px;
+            }
+            & :nth-child(3){
+                display: none;
+            }
+        }
+        .provide-wrapper{
+            .title{
+                font-size: 18px;
+            }
+            .list-wrapper{
+                .list-item{
+                    img{
+                        width: 32px;
+                        height: 32px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .job-full .job-slider-wrapper .content-wrapper{
+        .title{
+            font-size: 32px;
+            line-height: .9;
+        }
+    }
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+    
+}
+
+
+//Style for IE11
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  
+}
