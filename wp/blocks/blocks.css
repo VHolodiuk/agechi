@@ -1,0 +1,48 @@
+.main-window .title{
+    color: #36299a;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+.main-window .text {
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.about .title-wrapper .title {
+    color: #36299a;
+    font-weight: 300;
+}
+.about .content-wrapper .title {
+    color: #000;
+    font-weight: 700;
+}
+.about .content-wrapper .text {
+    color: #898989;
+    margin: 0px;
+}
+.about .content-wrapper .partner-wrapper{
+    display: flex;
+    align-items: center;
+}
+.about .content-wrapper .partner-wrapper .list-wrapper{
+    list-style: none;
+    display: flex;
+}
+.about .provide-wrapper .title{
+    color: #36299a;
+    font-weight: 300;
+}
+.about .provide-wrapper .list-wrapper{
+    list-style: none;
+}
+.about .provide-wrapper .list-wrapper .list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
